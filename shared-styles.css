@@ -1,0 +1,46 @@
+/* Shared styles for package buttons */
+.price-card button,
+.package-card button,
+.price-box button {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Click effect */
+.price-card button.clicked::after,
+.package-card button.clicked::after,
+.price-box button.clicked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+  animation: ripple 0.5s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(100, 100);
+    opacity: 0;
+  }
+}
+
+/* WhatsApp icon for buttons */
+.price-card button::before,
+.package-card button::before,
+.price-box button::before {
+  content: "\f232"; /* FontAwesome WhatsApp icon */
+  font-family: "Font Awesome 5 Brands";
+  margin-left: 8px;
+  font-size: 1.2em;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האינסטלטורים | פתרונות אינסטלציה מקצועיים</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="design-switcher.css">
+    <link rel="stylesheet" href="shared-styles.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4 mb-4">
+                <i class="fas fa-wrench"></i> האינסטלטורים
+            </h1>
+            <h2 class="h3 mb-4">מקצוענות ואמינות מעל 40 שנה</h2>
+            <p class="lead">פתרונות אינסטלציה מושלמים לכל צורך</p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+                צור קשר עכשיו
+            </button>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">השירותים שלנו</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-search service-icon"></i>
+                        <h3>איתור נזילות</h3>
+                        <p>איתור מדויק באמצעות ציוד מתקדם, ללא הרס מיותר</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-exclamation-triangle service-icon"></i>
+                        <h3>תיקוני SOS</h3>
+                        <p>פתרונות מהיום להיום, זמינות 24/7</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-water service-icon"></i>
+                        <h3>שחרור סתימות</h3>
+                        <p>טיפול מקצועי בכל סוגי הסתימות</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">למה לבחור בנו?</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <h4>זמינות 24/7</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h4>40 שנות ניסיון</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-tools feature-icon"></i>
+                        <h4>ציוד מתקדם</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-hand-holding-usd feature-icon"></i>
+                        <h4>מחירים הוגנים</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">מחירון שירותים נפוצים</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>שירותי חירום</h3>
+                            <div class="price">החל מ-250 ₪</div>
+                        </div>
+                        <ul class="price-features">
+                            <li>פתיחת סתימות דחופה</li>
+                            <li>תיקון נזילות</li>
+                            <li>החלפת ברזים</li>
+                            <li>זמינות 24/7</li>
+                            <li>הגעה תוך שעה</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-package="emergency">הזמן שירות</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-card featured">
+                        <div class="price-header">
+                            <h3>שיפוץ אמבטיה</h3>
+                            <div class="price">החל מ-5,000 ₪</div>
+                        </div>
+                        <ul class="price-features">
+                            <li>החלפת צנרת מלאה</li>
+                            <li>איטום מקצועי</li>
+                            <li>התקנת כלים סניטריים</li>
+                            <li>אחריות ל-3 שנים</li>
+                            <li>כולל חומרים</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-package="renovation">קבל הצעת מחיר</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>בדיקה וייעוץ</h3>
+                            <div class="price">החל מ-350 ₪</div>
+                        </div>
+                        <ul class="price-features">
+                            <li>איתור נזילות</li>
+                            <li>צילום צנרת</li>
+                            <li>ייעוץ מקצועי</li>
+                            <li>דוח מפורט</li>
+                            <li>המלצות לטיפול</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-package="inspection">תאם בדיקה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="services-list-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">רשימת שירותים מלאה</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="services-category">
+                        <h3>שירותי תחזוקה שוטפת</h3>
+                        <ul>
+                            <li>פתיחת סתימות בכיור</li>
+                            <li>תיקון ברזים דולפים</li>
+                            <li>החלפת אטמים</li>
+                            <li>ניקוי סיפונים</li>
+                            <li>תיקון נזילות בצנרת</li>
+                            <li>טיפול במשאבות מים</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-category">
+                        <h3>שירותי שיפוץ והתקנה</h3>
+                        <ul>
+                            <li>החלפת צנרת מלאה</li>
+                            <li>שיפוץ חדרי אמבטיה</li>
+                            <li>התקנת דודי שמש</li>
+                            <li>התקנת מערכות סינון מים</li>
+                            <li>החלפת אסלות ומקלחונים</li>
+                            <li>התקנת מערכות השקיה</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">לקוחות מספרים</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"הגיעו תוך פחות משעה ופתרו נזילה שהייתה סיוט!"</p>
+                        <p class="testimonial-author">- דניאל, תל אביב</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"שירות מקצועי ומדויק, גם המחיר היה מצוין."</p>
+                        <p class="testimonial-author">- רותם, ראשון לציון</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"עשו לנו שיפוץ מושלם בבית – מעל ומעבר לציפיות!"</p>
+                        <p class="testimonial-author">- אביגיל, ירושלים</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">השאירו פרטים ונחזור אליכם</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">שם מלא</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">טלפון</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">תיאור הבעיה</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">שלח</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="design-switcher.js" defer></script>
+    <script src="shared-functions.js"></script>
+</body>
+
+</html>

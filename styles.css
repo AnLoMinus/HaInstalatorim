@@ -1,0 +1,212 @@
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #004d99;
+  --accent-color: #ff9900;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 102, 204, 0.9), rgba(0, 77, 153, 0.9));
+  color: white;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Service Cards */
+.service-card {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.3s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Feature Cards */
+.feature-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 0.75rem 2rem;
+}
+
+.btn-primary:hover {
+  background-color: #e68a00;
+  border-color: #e68a00;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .service-card,
+  .feature-card,
+  .testimonial-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Design 1 - Modern Style Pricing & Services */
+.price-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.price-card.featured::before {
+  content: "פופולרי";
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  background: var(--accent-color);
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-size: 14px;
+}
+
+.price-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.price-header .price {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.price-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.price-features li {
+  padding: 0.5rem 0;
+  color: #666;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.price-features li::before {
+  content: "✓";
+  color: var(--accent-color);
+  position: absolute;
+  right: 0;
+}
+
+.services-category {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services-category h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.services-category h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+.services-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-category li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  transition: padding 0.3s ease;
+}
+
+.services-category li:hover {
+  padding-right: 1rem;
+  color: var(--primary-color);
+}

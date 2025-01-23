@@ -1,0 +1,369 @@
+:root {
+  --primary-color: #1a5f7a;
+  --secondary-color: #2c88b0;
+  --accent-color: #ffc107;
+  --text-color: #2c3e50;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+}
+
+/* Navbar Styles */
+.navbar {
+  background: rgba(26, 95, 122, 0.95);
+  transition: var(--transition);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-contact {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-contact i {
+  margin-left: 0.5rem;
+}
+
+/* Hero Section */
+.classic-hero {
+  background: url("hero-bg.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.classic-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.classic-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section Styles */
+.section-title {
+  position: relative;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+/* About Section */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.feature-item i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-left: 1rem;
+}
+
+.feature-text h4 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* Services Section */
+.service-box {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--light-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.service-icon i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.service-features li {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.service-features li::before {
+  content: "✓";
+  color: var(--accent-color);
+  margin-left: 0.5rem;
+}
+
+/* Gallery Section */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(26, 95, 122, 0.9);
+  color: white;
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-overlay {
+  bottom: 0;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Testimonials Section */
+.testimonial-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.testimonial-content i {
+  color: var(--accent-color);
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+/* Contact Section */
+.contact-info-box {
+  background: var(--primary-color);
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: var(--accent-color);
+}
+
+.contact-form-box {
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-color);
+  color: white;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .classic-hero {
+    height: 70vh;
+  }
+
+  .contact-info-box,
+  .contact-form-box {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Design 2 - Classic Style Packages */
+.package-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-card.popular {
+  border: 2px solid var(--accent-color);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  right: 50%;
+  transform: translateX(50%);
+  background: var(--accent-color);
+  color: white;
+  padding: 4px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.package-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.package-name {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.package-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.package-price .currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.package-period {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.package-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.package-body li {
+  padding: 0.75rem 0;
+  color: var(--text-color);
+  border-bottom: 1px dashed #e5e7eb;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.package-body li::before {
+  content: "✓";
+  color: var(--accent-color);
+  position: absolute;
+  right: 0;
+}
+
+.package-footer {
+  margin-top: auto;
+}

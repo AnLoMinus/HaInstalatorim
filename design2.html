@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האינסטלטורים | עיצוב קלאסי</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="design2-styles.css">
+    <link rel="stylesheet" href="design-switcher.css">
+    <link rel="stylesheet" href="shared-styles.css">
+    <script src="design-switcher.js" defer></script>
+</head>
+
+<body>
+    <!-- Classic Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-wrench"></i> האינסטלטורים
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">אודות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">שירותים</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">גלריה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">המלצות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">צור קשר</a>
+                    </li>
+                </ul>
+                <div class="contact-info d-none d-lg-flex">
+                    <a href="tel:052-XXX-XXXX" class="nav-contact">
+                        <i class="fas fa-phone-alt"></i>
+                        052-XXX-XXXX
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Classic Hero Section -->
+    <header class="classic-hero">
+        <div class="container text-center">
+            <h1 class="display-4">מקצוענות ואמינות מעל 40 שנה</h1>
+            <p class="lead">פתרונות אינסטלציה מקצועיים לכל צורך</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-lg mx-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    צור קשר עכשיו
+                </button>
+                <button class="btn btn-outline-light btn-lg mx-2" href="#services">
+                    לכל השירותים
+                </button>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">למה לבחור בנו?</h2>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="feature-text">
+                                    <h4>40 שנות ניסיון</h4>
+                                    <p>מומחיות מוכחת בתחום האינסטלציה</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="feature-text">
+                                    <h4>זמינות 24/7</h4>
+                                    <p>מענה מהיר לכל קריאת חירום</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="feature-text">
+                                    <h4>אחריות מלאה</h4>
+                                    <p>על כל העבודות והחלקים</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="about-image.jpg" alt="צוות מקצועי" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">השירותים שלנו</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <h3>איתור נזילות</h3>
+                        <p>איתור מדויק באמצעות ציוד מתקדם, ללא הרס מיותר</p>
+                        <ul class="service-features">
+                            <li>מצלמות טרמיות</li>
+                            <li>איתור ללא הרס</li>
+                            <li>פתרון מהיר</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">פרטים נוספים</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>תיקוני חירום</h3>
+                        <p>מענה מיידי 24/7 לכל מצב חירום</p>
+                        <ul class="service-features">
+                            <li>זמינות מלאה</li>
+                            <li>הגעה מהירה</li>
+                            <li>פתרון במקום</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">פרטים נוספים</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>שיפוצים כלליים</h3>
+                        <p>שדרוג והחלפת מערכות אינסטלציה</p>
+                        <ul class="service-features">
+                            <li>תכנון מקצועי</li>
+                            <li>חומרים איכותיים</li>
+                            <li>אחריות מלאה</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">פרטים נוספים</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">חבילות שירות</h2>
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-name">בסיסי</div>
+                            <div class="package-price">
+                                <span class="amount">199</span>
+                                <span class="currency">₪</span>
+                            </div>
+                            <div class="package-period">לקריאה</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>הגעת טכנאי מוסמך</li>
+                                <li>אבחון הבעיה</li>
+                                <li>תיקון מהיר</li>
+                                <li>אחריות לחודש</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn btn-outline-primary w-100" data-package="basic">הזמן עכשיו</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="package-card popular">
+                        <div class="popular-badge">מומלץ</div>
+                        <div class="package-header">
+                            <div class="package-name">מקיף</div>
+                            <div class="package-price">
+                                <span class="amount">499</span>
+                                <span class="currency">₪</span>
+                            </div>
+                            <div class="package-period">לביקור</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>כל השירותים הבסיסיים</li>
+                                <li>צילום וידאו של הצנרת</li>
+                                <li>ניקוי יסודי של המערכת</li>
+                                <li>אחריות ל-3 חודשים</li>
+                                <li>דוח מצב מפורט</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn btn-primary w-100" data-package="comprehensive">הזמן עכשיו</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-name">פרימיום</div>
+                            <div class="package-price">
+                                <span class="amount">899</span>
+                                <span class="currency">₪</span>
+                            </div>
+                            <div class="package-period">לביקור</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>כל השירותים המקיפים</li>
+                                <li>טיפול מונע</li>
+                                <li>החלפת חלקים בלויים</li>
+                                <li>אחריות לשנה</li>
+                                <li>תחזוקה תקופתית</li>
+                                <li>עדיפות בקריאות חירום</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn btn-outline-primary w-100" data-package="premium">הזמן עכשיו</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="package-name">עסקי</div>
+                            <div class="package-price">
+                                <span>בהתאמה אישית</span>
+                            </div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>חוזה שירות שנתי</li>
+                                <li>ביקורות תקופתיות</li>
+                                <li>טיפול מונע</li>
+                                <li>זמינות 24/7</li>
+                                <li>הנחות קבועות</li>
+                                <li>מנהל תיק לקוח אישי</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <button class="btn btn-outline-primary w-100" data-package="business">צור קשר
+                                לפרטים</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">גלריית עבודות</h2>
+            <div class="swiper gallery-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="gallery1.jpg" alt="עבודה 1">
+                            <div class="gallery-overlay">
+                                <h4>החלפת צנרת בבניין</h4>
+                                <p>פרויקט שיפוץ מקיף</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more gallery items -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">מה הלקוחות אומרים</h2>
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i class="fas fa-quote-right"></i>
+                                <p>שירות מקצועי ואדיב, הגיעו בזמן ופתרו את הבעיה במהירות. ממליץ בחום!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="client1.jpg" alt="לקוח">
+                                <div class="author-info">
+                                    <h4>ישראל ישראלי</h4>
+                                    <p>תל אביב</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more testimonials -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info-box">
+                        <h2 class="section-title">צור קשר</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>טלפון</h4>
+                                    <p>052-XXX-XXXX</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>אימייל</h4>
+                                    <p>info@plumbers.co.il</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>שעות פעילות</h4>
+                                    <p>24/7 לקריאות חירום</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form-box">
+                        <h3>השאירו פרטים ונחזור אליכם</h3>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="שם מלא" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="טלפון" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="תיאור הבעיה"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">שליחה</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>האינסטלטורים</h5>
+                    <p>40 שנות ניסיון בשירותי אינסטלציה מקצועיים</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>קישורים מהירים</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">אודות</a></li>
+                        <li><a href="#services">שירותים</a></li>
+                        <li><a href="#gallery">גלריה</a></li>
+                        <li><a href="#contact">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>עקבו אחרינו</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="design2-script.js"></script>
+    <script src="shared-functions.js"></script>
+</body>
+
+</html>
